@@ -1,0 +1,359 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #f00008;
+  --secondary-color: #ffffff;
+  --background-color: #ede0d9;
+  --text-color: #000000;
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Architects Daughter", cursive;
+  color: var(--text-color);
+}
+
+.presentation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-content img {
+  width: 60%;
+  height: auto;
+}
+
+.presentation-content p {
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.presentation-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-image img {
+  width: 60%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planning h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.planning img {
+  width: 80%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.planning p {
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.cours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cours h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.cours p {
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.cours img {
+  width: 80%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  width: 20%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.resume p {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.contact p {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.contact a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .presentation-content {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .presentation-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .presentation-content img {
+    width: 30%;
+  }
+
+  .presentation-paragraphe p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .presentation-paragraphe {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .presentation-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .presentation-image img {
+    width: 70%;
+  }
+
+  main {
+    margin-top: 1rem;
+  }
+
+  .planning h2 {
+    font-size: 1.5rem;
+  }
+
+  .planning p {
+    width: 90%;
+  }
+
+  .cours h2 {
+    font-size: 1.5rem;
+  }
+
+  .cours p {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .resume {
+    width: 100%;
+  }
+
+  .resume h2 {
+    font-size: 1rem;
+  }
+
+  .resume p {
+    width: 90%;
+    text-align: justify;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-paragraphe {
+    flex-direction: column;
+  }
+
+  .contact-paragraphe p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .contact-paragraphe a {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .presentation-logo img {
+    width: 40%;
+  }
+
+  .presentation-content p {
+    font-size: 1.2rem;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .presentation-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 7rem;
+  }
+
+  .presentation-image img {
+    width: 60%;
+  }
+
+  .planning img {
+    width: 60%;
+  }
+
+  .planning h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .planning p {
+    font-size: 1.1rem;
+  }
+
+  .cours h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .cours p {
+    font-size: 1.1rem;
+  }
+
+  .image-cours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wraop: wrap;
+    width: 25%;
+  }
+  .image-cours img {
+    width: 100%;
+    padding: 2rem;
+  }
+}
